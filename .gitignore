@@ -1,0 +1,18 @@
+# .NET
+backend/bin/
+backend/obj/
+backend/publish/
+backend/appsettings.Production.json
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+frontend/.env.local
+frontend/.env.production
+
+# SSH
+*.key
+*.pem
+
+# Scripts temporários
+fix-ssh.ps1

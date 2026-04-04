@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh-keygen -t ed25519 -f \"C:\\\\Users\\\\HIT\\\\.ssh\\\\oracle\" -N \"\")",
+      "Bash(ssh-keygen -t ed25519 -f \"C:/Users/HIT/.ssh/oracle\")",
+      "Bash(dotnet build:*)",
+      "Bash(ssh -i \"C:/Users/HIT/.ssh/oracle\" ubuntu@137.131.189.217 \"sudo -u postgres psql -c \\\\\"CREATE USER portfolio_user WITH PASSWORD 'P0rtf0lio@2026';\\\\\" && sudo -u postgres psql -c \\\\\"CREATE DATABASE portfolio_db OWNER portfolio_user;\\\\\" && sudo -u postgres psql -c \\\\\"GRANT ALL PRIVILEGES ON DATABASE portfolio_db TO portfolio_user;\\\\\"\")",
+      "Bash(dotnet tool:*)",
+      "Bash(dotnet ef:*)",
+      "Bash(ssh -i:*)"
+    ]
+  }
+}
