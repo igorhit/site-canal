@@ -1,0 +1,102 @@
+export const mockCampeoes = [
+  { id: 1, nome: "Aatrox", slug: "Aatrox", imagem: "/assets/campeoes/aatrox1.png" },
+  { id: 2, nome: "Lux", slug: "lux", imagem: null },
+  { id: 3, nome: "Garen", slug: "garen", imagem: null },
+  { id: 4, nome: "Miss Fortune", slug: "miss-fortune", imagem: null },
+  { id: 5, nome: "Thresh", slug: "thresh", imagem: null },
+  { id: 6, nome: "Yasuo", slug: "yasuo", imagem: null },
+  { id: 7, nome: "Leona", slug: "leona", imagem: null },
+  { id: 8, nome: "Vi", slug: "vi", imagem: null },
+];
+
+export const mockCampeaoDetalhe = {
+  id: 1,
+  nome: "Aatrox",
+  slug: "Aatrox",
+  regiao1: "Runeterra",
+  regiao2: null,
+  imagem: null,
+  background: null,
+  poderes: [
+    { estrela: 1, nome: "Infernal Chains", descricao: "When an equipped ally strikes, reduce the cost of a random card in hand by 1." },
+    { estrela: 2, nome: "Corrupted Weapon", descricao: "+1 Starting Mana. Game Start: Create in hand 2 random Darkin equipment." },
+    { estrela: 3, nome: "Infernal Chains II", descricao: "When an equipped ally strikes, reduce the cost of a random card in hand by 2." },
+    { estrela: 4, nome: "Armed To The Teeth", descricao: "Allies with Equipment or attachments have +2|+2." },
+    { estrela: 5, nome: "Manaflow", descricao: "Game Start: Get a mana gem." },
+    { estrela: 6, nome: "Darkin Awakened", descricao: "When you summon or transform a Darkin, double its stats." },
+  ],
+  itensERegras: [
+    { id: 1, nome: "A Espada Darkin", imagem: "/assets/reliquias/assinatura/aEspadaDarkin.png", descricao: "+0|+3. When you play or transform a Darkin, it strikes the weakest enemy." },
+    { id: 2, nome: "Contendas do Forjador Estelar", imagem: "/assets/reliquias/assinatura/01.png", descricao: "If in deck or hand and Titanic, +1 Starting Mana. You can find Level 2 Champions when you Invoke or Manifest." },
+    { id: 3, nome: "Canto da Sereia", imagem: "/assets/reliquias/assinatura/11.png", descricao: "Game Start: Create an Evelynn in hand. When you summon a Husk, it loses Immobile." },
+    { id: 4, nome: "Arma Viva", imagem: "/assets/reliquias/epicas/19.png", descricao: "Play, Attack, and Round Start: Forge me." },
+    { id: 5, nome: "Enganando a Morte", imagem: "/assets/reliquias/epicas/02.png", descricao: "+1|+0. While I'm attacking, I can't take damage or die." },
+    { id: 6, nome: "Espírito Ecoante", imagem: "/assets/reliquias/epicas/04.png", descricao: "Game Start: Create 7 copies of me in your deck. Champion Spells cost 1 less." },
+  ],
+  cartas: [
+    "/assets/cartas/aatrox1.png",
+    "/assets/cartas/aatrox2.png",
+    "/assets/cartas/aatrox3.png",
+    "/assets/cartas/aatrox4.png",
+    "/assets/cartas/aatrox5.png",
+    "/assets/cartas/aatrox6.png",
+    "/assets/cartas/aatrox7.png",
+    "/assets/cartas/aatrox8.png",
+  ],
+  builds: [
+    {
+      id: 1,
+      tipoBuild: "3 Estrelas Épicas",
+      descricao:
+        "Arma Viva para scaling de atributos, Enganando a Morte mantém Aatrox vivo enquanto ele não fica grande o suficiente e permite controle de grupo com o feitiço do campeão durante o ataque sem sofrer dano. Espírito Ecoante praticamente garante Aatrox na mão e a redução de custo no feitiço ajuda o combo com Enganando a Morte.",
+      reliquia1: {
+        id: 1,
+        nome: "Arma Viva",
+        raridade: "Épica",
+        descricao: "Play, Attack, and Round Start: Forge me.",
+        imagem: "/assets/reliquias/epicas/19.png",
+      },
+      reliquia2: {
+        id: 2,
+        nome: "Enganando a Morte",
+        raridade: "Épica",
+        descricao: "+1|+0 While I'm attacking, I can't take damage or die.",
+        imagem: "/assets/reliquias/epicas/02.png",
+      },
+      reliquia3: {
+        id: 3,
+        nome: "Espírito Ecoante",
+        raridade: "Épica",
+        descricao: "Game Start: Create 7 copies of me in your deck. Champion Spells cost 1 less.",
+        imagem: "/assets/reliquias/epicas/04.png",
+      },
+    },
+    {
+      id: 2,
+      tipoBuild: "6 Estrelas Épicas Assinatura",
+      descricao:
+        "Contendas do Forjador Estelar e A Espada Darkin habilitam a mana extra além do controle de board ao transformar um Darkin. Canto da Sereia dá acesso as Carcaças e, ao equipa-las, a próxima unidade herdará os atributos da Carcaça e do equipamento. Além disso, ao equipar e desequipar um equipamento que tenha pelo menos um item de atributo, o equipamento ganha mais uma cópia extra do item. Pode ser repetido infinitamente (bug ou feature??).",
+      reliquia1: {
+        id: 4,
+        nome: "Contendas do Forjador Estelar",
+        raridade: "Assinatura",
+        descricao: "Power: If I'm in deck or in hand and Titanic, +1 Starting Mana. You can find Level 2 Champions when you Invoke or Manifest.",
+        imagem: "/assets/reliquias/assinatura/01.png",
+      },
+      reliquia2: {
+        id: 2,
+        nome: "Canto da Sereia",
+        raridade: "Assinatura",
+        descricao: "Power: Game Start: Create an Evelynn in hand. When you summon a Husk, it loses Immobile.",
+        imagem: "/assets/reliquias/assinatura/11.png",
+      },
+      reliquia3: {
+        id: 5,
+        nome: "A Espada Darkin",
+        raridade: "Assinatura",
+        descricao: "+0|+3 Power: When you play or transform a Darkin, it strikes the weakest enemy.",
+        imagem: "/assets/reliquias/assinatura/aEspadaDarkin.png",
+      },
+    },
+  ],
+};
